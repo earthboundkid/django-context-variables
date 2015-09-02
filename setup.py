@@ -6,7 +6,7 @@ def read(fname):
 
 setup(
     name='django-context-variables',
-    version='0.0.1',
+    version='0.0.2',
     author='Carl M. Johnson',
     packages=['context_variables'],
     url='https://github.com/carlmjohnson/django-context-variables',
