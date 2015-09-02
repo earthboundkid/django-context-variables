@@ -8,6 +8,9 @@ class context_variable(object):
         # Handle case of being called from class instead of an instance
         if obj is None:
             return self
+        # If we got a plain value, return that
+        if not callable(self.func):
+            return self.func
         # Evaluate the property
         value = self.func(obj)
         # Save value into the instance, replacing the descriptor
